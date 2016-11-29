@@ -31,7 +31,8 @@ def handle_messages():
                     recipient_id = messaging_event["recipient"]["id"]
                     message_text = messaging_event["message"]["text"]+"  Auto"
 
-                    send_message(sender_id, message_text)
+                    #send_message(sender_id, message_text)
+                    send_message(data)
 
                 if messaging_event.get("delivery"):
                     pass
