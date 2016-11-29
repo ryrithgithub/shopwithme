@@ -32,7 +32,7 @@ def handle_messages():
                     message_text = messaging_event["message"]["text"]+"  Auto"
 
                     #send_message(sender_id, message_text)
-                    send_message(data)
+                    send_message(sender_id,str(data))
 
                 if messaging_event.get("delivery"):
                     pass
